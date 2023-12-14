@@ -6,3 +6,20 @@ nav div a{
   transition-timing-function: ease-in-out;
   transition-duration: 150ms;
 }
+
+div h6{
+  font-size: 30px;
+}
+div h1{
+  font-size: 45px;
+  font-weight: 700;
+}
+div p{
+  
+}
+
+.first {
+  color :aliceblue;
+  padding-top: 10%;
+  padding-left: 7%;
+}
