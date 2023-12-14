@@ -42,7 +42,7 @@ div input{
   outline: none;
 }
 
-div button {
+.first button {
   position: absolute;
   background-color: rgb(247, 110, 110);
   border-radius: 25px;
@@ -55,7 +55,7 @@ div button {
   transition-timing-function: ease-in-out;
 }
 
-div button:hover{
+.first button:hover{
   transition-property: all;
   margin-left: 50%;
   transition-timing-function: ease-in-out;
