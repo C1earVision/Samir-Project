@@ -32,6 +32,7 @@ div p{
 
 div input{
   position: absolute;
+  color:black;
   border-radius: 25px; 
   padding: 10px; 
   margin-top: 10%;
