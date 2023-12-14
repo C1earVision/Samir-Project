@@ -56,7 +56,6 @@ div button {
 
 div button:hover{
   transition-property: all;
-  background-color: rgb(117, 117, 255);
   margin-left: 50%;
   transition-timing-function: ease-in-out;
   transition-duration: .2s;

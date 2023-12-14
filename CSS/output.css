@@ -579,6 +579,18 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.relative {
+  position: relative;
+}
+
+.left-\[7\.3em\] {
+  left: 7.3em;
+}
+
+.top-\[-0\.8em\] {
+  top: -0.8em;
+}
+
 .mr-\[6vw\] {
   margin-right: 6vw;
 }
