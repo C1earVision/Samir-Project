@@ -39,6 +39,7 @@ div input{
   padding-left: 35px;
   font-size: large;
   width: 70%;
+  outline: none;
 }
 
 div button {
