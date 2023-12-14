@@ -6,20 +6,43 @@ nav div a{
   transition-timing-function: ease-in-out;
   transition-duration: 150ms;
 }
+.first {
+  color :rgb(255, 255, 255);
+  padding-top: 12%;
+  padding-left: 7%;
+  max-width: 50vw;
+  word-wrap: break-word;
+}
 
 div h6{
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
 }
 div h1{
   font-size: 45px;
   font-weight: 700;
+  margin-top: 2%;
 }
 div p{
-  
+ margin-top: 5%;
 }
 
-.first {
-  color :aliceblue;
-  padding-top: 10%;
-  padding-left: 7%;
+div input{
+  border-radius: 25px; 
+  padding: 10px; 
+  margin-top: 10%;
+  width: 50%;
+}
+
+div button {
+  background-color: rgb(247, 110, 110);
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-size: large;
+}
+
+button:hover{
+  ;
 }
