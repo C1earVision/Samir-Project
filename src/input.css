@@ -19,7 +19,7 @@
     @apply absolute flex flex-col gap-3 top-[6em] border py-[40px] px-20 rounded-[30px] shadow-md bg-white
   }
   .feature-card-img{
-    @apply rounded-[50px] m-auto w-[80px] p-5 bg-[rgb(0,113,248)] hover:bg-[rgb(238,98,107)] transition-all cursor-pointer
+    @apply rounded-[50px] m-auto w-[80px] p-5 bg-[rgb(0,113,248)] hover:bg-[rgb(238,98,107)] transition duration-[0.3s] cursor-pointer
   }
   .trending-img{
     @apply w-[100%] h-[220px] rounded-[30px] object-cover
