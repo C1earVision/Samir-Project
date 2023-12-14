@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .navlink-active{
+    @apply rounded-[20px] bg-[rgb(27,127,250)] self-center px-5 py-2 cursor-pointer
+  }
+  .navlink{
+    @apply hover:rounded-[20px] hover:bg-[rgb(26,137,249)] self-center px-5 py-2 cursor-pointer
+  }
+  .navlink-sign{
+    @apply rounded-[20px] bg-[rgb(26,137,249)] self-center px-5 py-2 cursor-pointer
+  }
+}

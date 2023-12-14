@@ -1,0 +1,8 @@
+header{
+  background-image: url("../images/banner-bg.jpg");
+}
+nav div a{
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms;
+}
