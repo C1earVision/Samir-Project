@@ -540,20 +540,25 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
-.font-bold {
-  font-weight: 700;
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.text-red-900 {
-  --tw-text-opacity: 1;
-  color: rgb(127 29 29 / var(--tw-text-opacity));
+.bg-\[\] {
+  background-color: ;
 }
 
-.underline {
-  text-decoration-line: underline;
+.bg-\[rgb\(0\2c 113\2c 248\)\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 113 248 / var(--tw-bg-opacity));
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
