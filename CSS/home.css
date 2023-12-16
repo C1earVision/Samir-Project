@@ -16,6 +16,14 @@ nav div a{
   /* lol */
 }
 
+#img-holder{
+  background-image: url(../images/cta-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+
 
 
 .image{
