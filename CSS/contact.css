@@ -83,3 +83,16 @@ input{
 footer{
   background-image: url(../images/footer-bg.jpg);
 }
+
+
+.card a{
+  color: blue;
+  transition: all;
+  transition-duration: 100ms;
+}
+
+.card a:hover {
+  transition: all;
+  transition-duration: 100ms;
+  color:rgb(150, 4, 255);
+}
