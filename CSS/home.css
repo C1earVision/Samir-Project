@@ -141,3 +141,7 @@ div input{
 .games-container:hover p:nth-child(2){
   color: rgb(0,113,248);
 }
+
+footer{
+  background-image: url(../images/footer-bg.jpg);
+}
