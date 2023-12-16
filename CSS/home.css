@@ -16,6 +16,14 @@ nav div a{
   /* lol */
 }
 
+#img-holder{
+  background-image: url(../images/cta-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+
 
 
 .image{
@@ -133,3 +141,19 @@ div input{
 .games-container:hover p:nth-child(2){
   color: rgb(0,113,248);
 }
+
+footer{
+  background-image: url(../images/footer-bg.jpg);
+}
+
+.float{
+  position: fixed;
+  top: 0;
+  background-color: rgb(0,113,248);
+  width: 99vw;
+  z-index: 10;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 100px;
+}
+
