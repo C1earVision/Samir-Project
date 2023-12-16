@@ -29,3 +29,15 @@ nav div a{
   font-size: 1.2rem;
   font-weight: 400;
 }
+
+.parent{
+  justify-content: center;
+  gap:15rem;
+}
+
+.card {
+  background-color: rgb(219, 219, 219);
+  margin-top: 10rem;
+  border-radius: 20px;
+  
+}
