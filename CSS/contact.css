@@ -32,13 +32,40 @@ nav div a{
 
 .parent{
   justify-content: center;
-  gap:1%;
+  gap:5%;
 }
 
 .card {
-  background-color: rgb(219, 219, 219);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  background-color: rgb(236, 236, 236);
   margin-top: 10rem;
   border-radius: 20px;
   width: 40%;
   
+}
+
+#nobg{
+  background-color: white;
+}
+
+h4 {
+  color: orangered;
+  font-weight: 600;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem; 
+}
+
+p{
+  padding-top: 4% ;
+
+}
+
+input{
+  background-color: rgb(206, 206, 206);
+  border-radius: 25px;
 }
