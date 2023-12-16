@@ -43,11 +43,12 @@ nav div a{
   margin-top: 10rem;
   border-radius: 20px;
   width: 40%;
-  
+  margin-bottom: 7rem;
 }
 
 #nobg{
   background-color: white;
+  margin-top: 100px;
 }
 
 h4 {
@@ -62,10 +63,23 @@ h1 {
 
 p{
   padding-top: 4% ;
-
 }
 
 input{
-  background-color: rgb(206, 206, 206);
+  height: 50px;
+  padding-left: 30px;
+  margin-left: 10px;
+  margin-top: 5%;
+  background-color: rgb(232, 232, 232);
   border-radius: 25px;
+  width: 40%;
+}
+
+#message{
+  width: 80%;
+  height: 50%;
+  padding-bottom: 20%;
+}
+footer{
+  background-image: url(../images/footer-bg.jpg);
 }
