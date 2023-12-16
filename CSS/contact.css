@@ -32,12 +32,13 @@ nav div a{
 
 .parent{
   justify-content: center;
-  gap:15rem;
+  gap:1%;
 }
 
 .card {
   background-color: rgb(219, 219, 219);
   margin-top: 10rem;
   border-radius: 20px;
+  width: 40%;
   
 }
