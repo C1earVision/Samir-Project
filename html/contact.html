@@ -4,20 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../CSS/output.css" rel="stylesheet">
-  <link href="/CSS/contact.css" rel="stylesheet">
+  <link href="../CSS/contact.css" rel="stylesheet">
 </head>
 <body>
   <header class="">
     
     <!-- Nav bar -->
-    <nav class="pt-10 pl-[7.5vw] flex justify-between flex-row">
+    <nav class="pt-10 pl-[7.5vw] md:flex hidden flex-shrink justify-between flex-row" id="nav-bar">
       <!-- Logo -->
-      <div>
+      <div class="self-center">
           <img src="../images/logo.png">
       </div>
       <!-- Content -->
       <div class="self-center mr-[6vw] text-white flex gap-7">
-        <a class="navlink-active">Home</a>
+        <a href="./index.html" class="navlink-active">Home</a>
         <a class="navlink">Our shop</a>
         <a class="navlink">Product Details</a>
         <a class="navlink">Contact Us</a>
@@ -25,25 +25,36 @@
       </div>
     </nav>
     <div id="contact">
-      <h1>CONTACT US</h1>
+      <h1 id="scroll">CONTACT US</h1>
       <h6>Home > Contact</h6>
     </div>
   </header>
-  <div class="flex parent">
+  <div class="flex md:flex-row flex-col parent">
     <!-- Left Side -->
-    <div class="card">
+    <div class="card self-center break-words">
       <h4>CONTACT US</h4>
       <h1>Say Hello!</h1>
       <p>pls give me bonus i need to get over the D+ here the <br/> classroom link to give me bonus</p>
       <a href="https://classroom.google.com/u/3/c/NjM1MDM4MTIwNDM0">https://classroom.google.com/u/3/c/NjM1MDM4MTIwNDM0</a>
+      <h3 class="mt-28 font-bold">Adress</h3>
+      <h3 class="text-[rgb(175,170,170)]">Sunny Isles Beach, FL 33160, United States</h3>
+      <h3 class="mt-5 font-bold">Phone</h3>
+      <h3 class="text-[rgb(175,170,170)]">+123 456 7890</h3>
+      <h3 class="mt-5 font-bold">Email</h3>
+      <h3 class="text-[rgb(175,170,170)]">lugx@contact.com</h3>
     </div>
     
     <!-- Right Side -->
-    <div class="card" id="nobg">
+    <div class="card-2 self-center break-words" id="nobg">
+        <div>
+          <iframe class="rounded-[30px] md:w-[600px] md:h-[350px] sm:w-[500px] w-[300px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184332.58695791103!2d29.73802323436839!3d30.854464673020445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145f7d5dcf4dc447%3A0xfbf1eb15d4fed589!2sEgypt%20Japan%20University%20Of%20Science%20%26%20Technology!5e0!3m2!1sar!2seg!4v1702749147875!5m2!1sar!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <input type="text" placeholder="your name.."/>
+        <input type="text" placeholder="your surname.."/>
         <input type="text" placeholder="your email.."/>
         <input type="text" placeholder="subject"/>
         <input id="message" type="text" placeholder="your message.."/>
+        <button class="py-3 px-6 text-white bg-[rgb(238,98,107)] hover:bg-[rgb(0,113,248)] transition-colors rounded-[25px] mt-14 ml-4">SEND MESSAGE NOW</button>
     </div>
   </div>
   <footer class="py-16 rounded-t-full text-center text-white">

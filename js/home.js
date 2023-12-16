@@ -2,7 +2,6 @@ const nav_bar = document.getElementById('nav-bar')
 const top_section = document.getElementById('scroll')
 const navObserver = new IntersectionObserver((entries, observer)=>{
   const entry = entries[0];
-
   if(!entry.isIntersecting){
     nav_bar.classList.add('float')
     nav_bar.classList.remove('pt-10')
