@@ -10,4 +10,13 @@ const navObserver = new IntersectionObserver((entries, observer)=>{
     nav_bar.classList.add('pt-10')
   }
 }, {})
+
+// I ANIMTED THE BACKGROUND FINALLY!!!
+const header = document.getElementsByTagName('header')[0]
+header.onmousemove = function(event) {
+  header.style.backgroundPositionX = -15+event.clientX/100+'rem';
+  header.style.backgroundPositionY = -10+event.clientY/100+'rem';
+  header.style.backgroundSize = '120%';
+};
+
 navObserver.observe(top_section)
