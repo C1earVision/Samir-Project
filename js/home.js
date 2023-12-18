@@ -24,18 +24,17 @@ let progressy=0;
 // I ANIMTED THE BACKGROUND FINALLY!!!
 const header = document.getElementsByTagName('header')[0]
 header.onmousemove = function(event) {
-  header.style.backgroundPositionX = progressx+'rem'//-15+event.clientX/100+'rem';
-  header.style.backgroundPositionY = progressy+'rem'//-10+event.clientY/100+'rem';
   goalx = -15+event.clientX/100
   goaly = -10+event.clientY/100
-  header.style.backgroundPosition.X = -15
   header.style.backgroundSize = '120%'
 };
 
 // the function runs 60 times a second
 function update(){
-  progressx = lerp(progressx,goalx,.5)
-  progressy = lerp(progressy,goaly,.5)
+  header.style.backgroundPositionX = progressx+'rem'
+  header.style.backgroundPositionY = progressy+'rem'
+  progressx = lerp(progressx,goalx,.2)
+  progressy = lerp(progressy,goaly,.2)
   requestAnimationFrame(update)
 }
 
