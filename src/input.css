@@ -13,10 +13,10 @@
     @apply rounded-[20px] bg-[rgb(238,98,107)] self-center px-5 py-2 cursor-pointer
   }
   .price{
-    @apply absolute text-white top-4 right-5 bg-[rgb(0,138,248)]
+    @apply relative text-white md:top-[-480px] top-[-400px] md:right-[-320px] right-[-260px] bg-[rgb(0,138,248)] w-[70px]
   }
   .feature-card-container{
-    @apply absolute flex flex-col gap-3 top-[6em] border py-[40px] px-20 rounded-[30px] shadow-md bg-white
+    @apply relative flex flex-col lg:w-[20vw] w-[65vw] lg:top-[6em] py-[40px] px-20 rounded-[30px] shadow-md bg-white
   }
   .feature-card-img{
     @apply rounded-[50px] m-auto w-[80px] p-5 bg-[rgb(0,113,248)] hover:bg-[rgb(238,98,107)] transition duration-[0.3s] cursor-pointer

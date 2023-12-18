@@ -9,7 +9,6 @@ nav div a{
 }
 .first {
   color :rgb(255, 255, 255);
-  max-width: 50vw;
   word-wrap: break-word;
   /* yabn ellazena shater */
   position:relative; 
@@ -19,8 +18,7 @@ nav div a{
 #img-holder{
   background-image: url(../images/cta-bg.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
+  background-size: contain;
 }
 
 
@@ -47,25 +45,28 @@ div p{
  margin-top: 5%;
 }
 
-div input{
-  position: absolute;
+
+#search-input, #email-input{
   color:black;
   border-radius: 25px; 
   padding: 10px; 
-  margin-top: 10%;
   padding-left: 35px;
   font-size: large;
   width: 70%;
   outline: none;
 }
 
+.first div{
+  margin-top: 10%;
+}
+
+
 .first button {
-  position: absolute;
+  position: relative;
   background-color: rgb(247, 110, 110);
   border-radius: 25px;
-  padding: 10px 30px;
-  margin-top: 10%;
-  margin-left: 60%;
+  padding: 11px 50px;
+  right: 90px;
   font-size: large;
   transition-property: all;
   transition-duration: .2s;
@@ -73,18 +74,18 @@ div input{
 }
 
 .first button:hover{
-  transition-property: all;
-  margin-left: 50%;
+  right: 110px;
   transition-timing-function: ease-in-out;
   transition-duration: .2s;
-  padding: 10px 60px
+  padding: 11px 60px
 }
 
 #shopping-cart{
-  position: absolute;
+  position: relative;
   color: white;
-  right: 30px;
-  top: 240px;
+  right: -230px;
+  top: -45px;
+  width: 43px;
   padding: 10px 15px;
   border-radius: 100px;
   transition: all 0.2s ease-in-out;
@@ -150,7 +151,7 @@ footer{
   position: fixed;
   top: 0;
   background-color: rgb(0,113,248);
-  width: 99vw;
+  width: 100vw;
   z-index: 10;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;

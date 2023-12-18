@@ -14,7 +14,7 @@
         <div class="self-center">
           <img src="../images/logo.png">
         </div>
-        <div class="self-center mr-[6vw] text-white flex gap-7">
+        <div class="self-center mr-[6vw] text-white lg:flex gap-7 hidden">
           <a class="navlink-active">Home</a>
           <a class="navlink">Our shop</a>
           <a class="navlink">Product Details</a>
@@ -22,66 +22,87 @@
           <a class="navlink-sign">SIGN IN</a>
         </div>
       </nav>
-      <div class="flex flex-row mt-[30vh] pl-[7.5vw] relative">
-        <div class = "first" id="scroll">
+      <div class="flex lg:flex-row flex-col mt-[30vh] relative lg:gap-0 gap-7">
+        <div class = "first lg:max-w-[50vw] pl-[7.5vw] md:max-w-[70vw]" id="scroll">
           <h6>WELCOME TO LUGX</h6>
           <h1>BEST GAMING SITE EVER!</h1>
-          <img class="relative top-[-0.8em] left-[7.3em]" src="../images/caption-dec.png">
+          <img class="relative top-[-0.8em] sm:block hidden left-[7.3em]" src="../images/caption-dec.png">
           <p>This project was made by the great Ahmed Ebrahim and the mediocre Shehab Tarek For Dr.Samir Al-Saghir and we would like a bonus because our GPA is under the water.</p>
-          <input type="text" placeholder="search"/>
-          <button>search</button>
-      </div>
-      <div class="absolute top-[-6em] right-[6vw]">
-        <img class="rounded-[2em]" src="../images/banner-image.jpg" alt="">
-        <div class="price rounded-[50px] px-4 py-2">
-          <p class="text-xl font-bold">$22</p>
-        </div>
-        <div class="absolute bottom-[-30px] left-[-30px] text-white rounded-full bg-[rgb(238,98,107)] px-3 py-7">
-          <p class="text-3xl font-bold">-40%</p>
-        </div>
-      </div>
-    </div>
-    <div class="relative mt-[15em] h-[300px] ">
-      <div class="feature-card-container left-[7em]">
-          <div class="feature-card-img">
-            <img src="../images/featured-01.png" alt="">
+          <div>
+            <input class="" type="text" placeholder="search" id="search-input"/>
+            <button class="">search</button>
           </div>
-          <h1 class="text-[20px]">FREE STORAGE</h1>
-      </div>
-      <div class="feature-card-container left-[29em]">
-        <div class="feature-card-img">
-          <img src="../images/featured-02.png" alt="">
         </div>
-        <h1 class="text-[20px]">USER MORE</h1>
-      </div>
-      <div class="feature-card-container left-[49em]">
-        <div class="feature-card-img">
-          <img src="../images/featured-03.png" alt="">
+        <div class="lg:ml-[15vw] lg:mt-[-80px] mt-[100px] self-center">
+          <div class="relative">
+            <img class="rounded-[2em] md:w-[410px] w-[350px]" src="../images/banner-image.jpg" alt="">
+            <div class="price rounded-[50px] px-4 py-2">
+              <p class="text-xl font-bold">$22</p>
+            </div>
+            <div class="absolute bottom-[5px] left-[-30px] text-white rounded-full bg-[rgb(238,98,107)] px-3 py-7">
+              <p class="text-3xl font-bold">-40%</p>
+            </div>
+          </div>
         </div>
-        <h1 class="text-[20px]">REPLAY READY</h1>
       </div>
-      <div class="feature-card-container left-[70em]">
-        <div class="feature-card-img">
-          <img src="../images/featured-04.png" alt="">
+      <div class="relative flex lg:flex-row flex-col gap-10 items-center justify-center">    
+        <div class="feature-card-container">
+            <div class="feature-card-img">
+              <img src="../images/featured-01.png" alt="">
+            </div>
+            <h1 class="text-[20px] self-center">FREE STORAGE</h1>
         </div>
-        <h1 class="text-[20px]">EASY LAYOUT</h1>
+        <div class="feature-card-container">
+          <div class="feature-card-img">
+            <img src="../images/featured-02.png" alt="">
+          </div>
+          <h1 class="text-[20px] self-center">USER MORE</h1>
+        </div>
+        <div class="feature-card-container">
+          <div class="feature-card-img">
+            <img src="../images/featured-03.png" alt="">
+          </div>
+          <h1 class="text-[20px] self-center">REPLAY READY</h1>
+        </div>
+        <div class="feature-card-container">
+          <div class="feature-card-img">
+            <img src="../images/featured-04.png" alt="">
+          </div>
+          <h1 class="text-[20px] self-center">EASY LAYOUT</h1>
+        </div>
       </div>
-    </div>
   </header>
-
-  <!-- Trending Card Starts -->
-  <div class="mt-[230px] ml-[7.5vw]" >
+  <div class="lg:mt-[230px] mt-[1000px]" >
+    <div class="ml-[7.5vw]">
       <p class="text-[rgb(238,98,107)] font-bold">TRENDING</p>
       <div class="flex flex-row justify-between w-[80vw] ">
         <h1>Trending Games</h1>
-        <button class="bg-[rgb(238,98,107)] transition duration-[0.3s] hover:bg-[rgb(0,113,248)] text-white font-bold h-[50px] px-6 rounded-[30px] mt-8">VIEW ALL</button>
+        <button class="bg-[rgb(238,98,107)] transition duration-[0.3s] hover:bg-[rgb(0,113,248)] text-white font-bold h-[50px] px-6 rounded-[30px] self-end">VIEW ALL</button>
       </div>
-      <div class="flex flex-row mt-[80px]" >
-        <div class="flex flex-row gap-5">
-          <div class="relative h-[320px] rounded-[30px] w-[300px] bg-[rgb(238,238,238)] games-container">
-            <div class="w-[100%] ">
-              <img src="../images/trending-01.jpg" class="trending-img">
-              <div class="price rounded-[15px] px-5 py-2">
+    </div>
+    <div class="flex lg:flex-row lg:mt-[80px] mt-[50px]" >
+      <div class="flex lg:flex-row flex-col w-[100%] justify-center items-center gap-7">
+        <div class="h-[320px] rounded-[30px] w-[300px] bg-[rgb(238,238,238)] games-container">
+          <div class="w-[100%] h-[240px]">
+            <img src="../images/trending-01.jpg" class="trending-img">
+            <div class="relative text-white top-[-200px] right-[-200px] bg-[rgb(0,138,248)] w-[70px] rounded-[15px] px-5 py-2">
+              <p class="text-lg font-bold">$22</p>
+            </div>
+          </div>
+          <div class="flex mt-0 ">
+            <div>
+              <p class="text-gray-600 ml-5 mb-0">Action</p>
+              <p class="font-bold text-[17px] ml-5 mt-0">Assassins Creed</p>
+            </div>
+          </div>
+          <div class="bg-[rgb(238,98,107)]" id="shopping-cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+        </div>
+          <div class="h-[320px] rounded-[30px] w-[300px] bg-[rgb(238,238,238)] games-container">
+            <div class="w-[100%] h-[240px]">
+              <img src="../images/trending-02.jpg" class="trending-img">
+              <div class="relative text-white top-[-200px] right-[-200px] bg-[rgb(0,138,248)] w-[70px] rounded-[15px] px-5 py-2">
                 <p class="text-lg font-bold">$22</p>
               </div>
             </div>
@@ -95,182 +116,162 @@
               <i class="fa-solid fa-bag-shopping"></i>
             </div>
           </div>
-            <div class="relative h-[320px] rounded-[30px] w-[300px] bg-[rgb(238,238,238)] games-container">
-              <div class="w-[100%] ">
-                <img src="../images/trending-02.jpg" class="trending-img">
-                <div class="price rounded-[15px] px-5 py-2">
-                  <p class="text-lg font-bold">$22</p>
-                </div>
-              </div>
-              <div class="flex">
-                <div>
-                  <p class="text-gray-600 ml-5 mb-0">Action</p>
-                  <p class="font-bold text-[17px] ml-5 mt-0">Assassins Creed</p>
-                </div>
-              </div>
-              <div class="bg-[rgb(238,98,107)]" id="shopping-cart">
-                <i class="fa-solid fa-bag-shopping"></i>
+    
+          <div class="h-[320px] rounded-[30px] w-[300px] bg-[rgb(238,238,238)] games-container">
+            <div class="w-[100%] h-[240px]">
+              <img src="../images/trending-03.jpg" class="trending-img">
+              <div class="relative text-white top-[-200px] right-[-200px] bg-[rgb(0,138,248)] w-[70px] rounded-[15px] px-5 py-2">
+                <p class="text-lg font-bold">$22</p>
               </div>
             </div>
-      
-            <div class="relative h-[320px] rounded-[30px] w-[300px] bg-[rgb(238,238,238)] games-container">
-              <div class="w-[100%] ">
-                <img src="../images/trending-03.jpg" class="trending-img">
-                <div class="price rounded-[15px] px-5 py-2">
-                  <p class="text-lg font-bold">$22</p>
-                </div>
-              </div>
-              <div class="flex">
-                <div>
-                  <p class="text-gray-600 ml-5 mb-0">Action</p>
-                  <p class="font-bold text-[17px] ml-5 mt-0">Assassins Creed</p>
-                </div>
-              </div>
-              <div class="bg-[rgb(238,98,107)]" id="shopping-cart">
-                <i class="fa-solid fa-bag-shopping"></i>
+            <div class="flex">
+              <div>
+                <p class="text-gray-600 ml-5 mb-0">Action</p>
+                <p class="font-bold text-[17px] ml-5 mt-0">Assassins Creed</p>
               </div>
             </div>
-      
-            <div class="relative h-[320px] rounded-[30px] w-[300px] bg-[rgb(238,238,238)] games-container">
-              <div class="w-[100%] ">
-                <img src="../images/trending-04.jpg" class="trending-img">
-                <div class="price rounded-[15px] px-5 py-2">
-                  <p class="text-lg font-bold">$22</p>
-                </div>
+            <div class="bg-[rgb(238,98,107)]" id="shopping-cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+          </div>
+    
+          <div class="h-[320px] rounded-[30px] w-[300px] bg-[rgb(238,238,238)] games-container">
+            <div class="w-[100%] h-[240px]">
+              <img src="../images/trending-04.jpg" class="trending-img">
+              <div class="relative text-white top-[-200px] right-[-200px] bg-[rgb(0,138,248)] w-[70px] rounded-[15px] px-5 py-2">
+                <p class="text-lg font-bold">$22</p>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="flex flex-col ml-5">
+                <p class="text-gray-600 mb-0">Adventure</p>
+                <p class="font-bold text-[17px] mt-0">Assassins Creed</p>
+              </div>
+            </div>
+            <div class="bg-[rgb(238,98,107)]" id="shopping-cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Most played Card Start -->
+  <div class="mt-[200px] ml-[7.5vw]" id = "topgames" >
+    <div id="mostplayed2">
+      <div id="mostplayed3">
+        <p class="text-[rgb(238,98,107)] font-bold">TOP GAMES</p>
+        <div class="flex flex-row justify-between w-[84.5vw]">
+          <h1>Most played</h1>
+          <button class="bg-[rgb(238,98,107)] transition duration-[0.3s] hover:bg-[rgb(0,113,248)] text-white font-bold h-[50px] px-6 rounded-[30px] mt-8">VIEW ALL</button>
+        </div>
+        
+        <div class="flex flex-row mt-[80px]" >
+          <div class="flex flex-row xl:flex-nowrap flex-wrap justify-center gap-5">
+            <!-- Single Card -->
+            <div class="relative h-[320px] rounded-[30px] w-[200px] bg-white games-container">
+              <div class="w-[100%]">
+                <img src="../images/top-game-01.jpg" class="trending-img">
               </div>
               <div class="flex justify-center">
                 <div class="flex flex-col">
-                  <p class="text-gray-600 mb-0 self-center">Adventure</p>
+                  <p class="text-gray-600 self-center mb-0">Adventure</p>
                   <p class="font-bold text-[17px] mt-0">Assassins Creed</p>
                 </div>
               </div>
-              <div class="bg-[rgb(238,98,107)]" id="shopping-cart">
-                <i class="fa-solid fa-bag-shopping"></i>
+              <div class="bg-[rgb(238,98,107)]" id="Explore">
+                <p>Explore</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Trending Card Ends -->
-
-    <!-- Most played Card Start -->
-    <div class="mt-[200px] ml-[7.5vw]" id = "topgames" >
-      <div id="mostplayed2">
-        <div id="mostplayed3">
-          <p class="text-[rgb(238,98,107)] font-bold">TOP GAMES</p>
-          <div class="flex flex-row justify-between w-[84.5vw]">
-            <h1>Most played</h1>
-            <button class="bg-[rgb(238,98,107)] transition duration-[0.3s] hover:bg-[rgb(0,113,248)] text-white font-bold h-[50px] px-6 rounded-[30px] mt-8">VIEW ALL</button>
-          </div>
-          
-          <div class="flex flex-row mt-[80px] px" >
-            <div class="flex flex-row gap-5">
-              <!-- Single Card -->
-              <div class="relative h-[320px] rounded-[30px] w-[200px] bg-white games-container">
-                <div class="w-[100%]">
-                  <img src="../images/top-game-01.jpg" class="trending-img">
-                </div>
-                <div class="flex justify-center">
-                  <div class="flex flex-col">
-                    <p class="text-gray-600 self-center mb-0">Adventure</p>
-                    <p class="font-bold text-[17px] mt-0">Assassins Creed</p>
-                  </div>
-                </div>
-                <div class="bg-[rgb(238,98,107)]" id="Explore">
-                  <p>Explore</p>
+            <!-- Single Card-->
+            <div class="relative h-[320px] rounded-[30px] w-[200px] bg-white games-container">
+              <div class="w-[100%] ">
+                <img src="../images/top-game-02.jpg" class="trending-img">
+              </div>
+              <div class="flex justify-center">
+                <div class="flex flex-col">
+                  <p class="text-gray-600 self-center mb-0">Adventure</p>
+                  <p class="font-bold text-[17px] mt-0">Assassins Creed</p>
                 </div>
               </div>
-              <!-- Single Card-->
-              <div class="relative h-[320px] rounded-[30px] w-[200px] bg-white games-container">
-                <div class="w-[100%] ">
-                  <img src="../images/top-game-02.jpg" class="trending-img">
-                </div>
-                <div class="flex justify-center">
-                  <div class="flex flex-col">
-                    <p class="text-gray-600 self-center mb-0">Adventure</p>
-                    <p class="font-bold text-[17px] mt-0">Assassins Creed</p>
-                  </div>
-                </div>
-                <div class="bg-[rgb(238,98,107)]" id="Explore">
-                  <p>Explore</p>
-                </div>
-              </div>
-              <!-- Single Card -->
-              <div class="relative h-[320px] rounded-[30px] w-[200px] bg-white games-container">
-                <div class="w-[100%] ">
-                  <img src="../images/top-game-03.jpg" class="trending-img">
-                </div>
-                <div class="flex justify-center">
-                  <div class="flex flex-col">
-                    <p class="text-gray-600 self-center mb-0">Adventure</p>
-                    <p class="font-bold text-[17px] mt-0">Assassins Creed</p>
-                  </div>
-                </div>
-                <div class="bg-[rgb(238,98,107)]" id="Explore">
-                  <p>Explore</p>
-                </div>
-              </div>
-              <!-- Single Card -->
-              <div class="relative h-[320px] rounded-[30px] w-[200px] bg-white games-container">
-                <div class="w-[100%] ">
-                  <img src="../images/top-game-04.jpg" class="trending-img">
-                </div>
-                <div class="flex justify-center">
-                  <div class="flex flex-col">
-                    <p class="text-gray-600 self-center mb-0">Adventure</p>
-                    <p class="font-bold text-[17px] mt-0">Assassins Creed</p>
-                  </div>
-                </div>
-                <div class="bg-[rgb(238,98,107)]" id="Explore">
-                  <p>Explore</p>
-                </div>
-              </div>
-        
-              <!-- Single Card -->
-              <div class="relative h-[320px] rounded-[30px] w-[200px] bg-white games-container">
-                <div class="w-[100%] ">
-                  <img src="../images/top-game-05.jpg" class="trending-img">
-                </div>
-                <div class="flex justify-center">
-                  <div class="flex flex-col">
-                    <p class="text-gray-600 self-center mb-0">Adventure</p>
-                    <p class="font-bold text-[17px] mt-0">Assassins Creed</p>
-                  </div>
-                </div>
-                <div class="bg-[rgb(238,98,107)]" id="Explore">
-                  <p>Explore</p>
-                </div>
-              </div>
-              <!-- Single Card -->
-              <div class="relative h-[320px] rounded-[30px] w-[200px] bg-white games-container">
-                <div class="w-[100%] ">
-                  <img src="../images/top-game-06.jpg" class="trending-img">
-                </div>
-                <div class="flex justify-center">
-                  <div class="flex flex-col">
-                    <p class="text-gray-600 self-center mb-0">Adventure</p>
-                    <p class="font-bold text-[17px] mt-0">Assassins Creed</p>
-                  </div>
-                </div>
-                <div class="bg-[rgb(238,98,107)]" id="Explore">
-                  <p>Explore</p>
-                </div>
+              <div class="bg-[rgb(238,98,107)]" id="Explore">
+                <p>Explore</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      <!-- Most played Card Ends -->
+            <!-- Single Card -->
+            <div class="relative h-[320px] rounded-[30px] w-[200px] bg-white games-container">
+              <div class="w-[100%] ">
+                <img src="../images/top-game-03.jpg" class="trending-img">
+              </div>
+              <div class="flex justify-center">
+                <div class="flex flex-col">
+                  <p class="text-gray-600 self-center mb-0">Adventure</p>
+                  <p class="font-bold text-[17px] mt-0">Assassins Creed</p>
+                </div>
+              </div>
+              <div class="bg-[rgb(238,98,107)]" id="Explore">
+                <p>Explore</p>
+              </div>
+            </div>
+            <!-- Single Card -->
+            <div class="relative h-[320px] rounded-[30px] w-[200px] bg-white games-container">
+              <div class="w-[100%] ">
+                <img src="../images/top-game-04.jpg" class="trending-img">
+              </div>
+              <div class="flex justify-center">
+                <div class="flex flex-col">
+                  <p class="text-gray-600 self-center mb-0">Adventure</p>
+                  <p class="font-bold text-[17px] mt-0">Assassins Creed</p>
+                </div>
+              </div>
+              <div class="bg-[rgb(238,98,107)]" id="Explore">
+                <p>Explore</p>
+              </div>
+            </div>
       
+            <!-- Single Card -->
+            <div class="relative h-[320px] rounded-[30px] w-[200px] bg-white games-container">
+              <div class="w-[100%] ">
+                <img src="../images/top-game-05.jpg" class="trending-img">
+              </div>
+              <div class="flex justify-center">
+                <div class="flex flex-col">
+                  <p class="text-gray-600 self-center mb-0">Adventure</p>
+                  <p class="font-bold text-[17px] mt-0">Assassins Creed</p>
+                </div>
+              </div>
+              <div class="bg-[rgb(238,98,107)]" id="Explore">
+                <p>Explore</p>
+              </div>
+            </div>
+            <!-- Single Card -->
+            <div class="relative h-[320px] rounded-[30px] w-[200px] bg-white games-container">
+              <div class="w-[100%] ">
+                <img src="../images/top-game-06.jpg" class="trending-img">
+              </div>
+              <div class="flex justify-center">
+                <div class="flex flex-col">
+                  <p class="text-gray-600 self-center mb-0">Adventure</p>
+                  <p class="font-bold text-[17px] mt-0">Assassins Creed</p>
+                </div>
+              </div>
+              <div class="bg-[rgb(238,98,107)]" id="Explore">
+                <p>Explore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Most played Card Ends -->
     <!-- Top Categories -->
     <div class="flex flex-col w-[100%] mt-28">
       <div class="flex flex-col self-center">
         <h3 class="self-center text-[rgb(238,98,107)] font-bold">CATEGORIES</h3>
         <h1>Top Categories</h1>
       </div>
-      <div class="flex justify-center gap-7 mt-16">
+      <div class="flex flex-row lg:flex-nowrap flex-wrap justify-center gap-7 mt-16">
         <div class="flex flex-col gap-6 bg-[rgb(0,113,248)] w-[240px] rounded-[25px]">
           <h3 class="self-center mt-5 text-white font-bold">Action</h3>
           <img class="rounded-[25px]" src="../images/categories-01.jpg" alt="">
@@ -294,28 +295,30 @@
       </div>
     </div>
     <!-- top categories done -->
-    <div class="mt-[350px] ml-[100px]">
-      <div class="relative w-[100%] h-[100vh]">
-        <div class="w-[550px] h-[550px] bg-[rgb(247,247,247)] rounded-[30px] p-[80px]" id="card-1">
+    <div class="mt-[350px]">
+      <div class="relative xl:ml-[110px] h-[100vh] xl:block flex flex-col items-center xl:gap-0 gap-5">
+        <div class="md:w-[550px] h-[550px] bg-[rgb(247,247,247)] rounded-[30px] p-[80px]" id="card-1">
           <h3 class="text-[rgb(238,98,107)] text-[15px] font-bold">OUR SHOP</h3>
-          <h1 class="text-[40px]">Go Pre-Order Buy & Get Best <span class="text-[rgb(0,113,248)]">Prices</span> For You!</h1>
+          <h1 class="md:text-[40px]">Go Pre-Order Buy & Get Best <span class="text-[rgb(0,113,248)]">Prices</span> For You!</h1>
           <h3 class="text-[rgb(74,74,74)] mt-5 font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quaerat ratione</h3>
           <button class="mt-10 py-3 px-6 hover:bg-[rgb(0,113,248)] transition-colors text-white rounded-[30px] bg-[rgb(238,98,107)]">SHOP NOW</button>
         </div>
-        <div class="w-[560px] absolute top-[-90px] left-[390px] h-[540px] rounded-[30px] p-[80px]" id="img-holder">
+        <div class="w-[560px] absolute xl:block hidden top-[-90px] left-[390px] h-[100vh] rounded-[30px] p-[80px] lg:z-[-1]" id="img-holder">
           
         </div>
-        <div class="w-[550px] h-[450px] bg-[rgb(247,247,247)] rounded-[30px] p-[80px] absolute top-[100px] right-[30px]">
+        <div class="md:w-[550px] h-[450px] bg-[rgb(247,247,247)] rounded-[30px] p-[80px] xl:absolute top-[100px] right-[90px]">
           <h3 class="text-[rgb(238,98,107)] text-[15px] font-bold">NEWSLETTER</h3>
-          <h1 class="text-[40px]">Get Up To $100 Off Just Buy <span class="text-[rgb(0,113,248)]">Subscribe</span> Newsletter!</h1>
-          <input type="email" placeholder="Your Email...">
-          <button class="mt-[55px] right-[40px] py-3 px-6 absolute hover:bg-[rgb(0,113,248)] transition-colors text-white rounded-[30px] bg-[rgb(238,98,107)]">SUBSSCRIPE NOW</button>
+          <h1 class="md:text-[40px]">Get Up To $100 Off Just Buy <span class="text-[rgb(0,113,248)]">Subscribe</span> Newsletter!</h1>
+          <div class="">
+            <input class="w-[300px] mt-[10%]" type="email" placeholder="Your Email..." id="email-input">
+            <button class="mt-[55px]  lg:top-[-103px] md:top-[-103px] top-0 md:right-[-200px] py-3 px-6 relative hover:bg-[rgb(0,113,248)] transition-colors text-white rounded-[30px] bg-[rgb(238,98,107)]">SUBSSCRIPE NOW</button>
+          </div>
         </div>
       </div>
     </div>
-    <footer class="py-16 rounded-t-full text-center text-white">
+    <!-- <footer class="py-16 rounded-t-full text-center text-white">
       <h3>Copyright &copy; 2050 LUGX Gaming Company. All rights reserved. Design: Ahmed-Shehab</h3>
-    </footer>
+    </footer> -->
     <script src="../js/home.js"></script>
   </body>
 </html>
