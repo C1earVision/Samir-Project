@@ -23,6 +23,8 @@ let progressy=0;
 
 // I ANIMTED THE BACKGROUND FINALLY!!!
 const header = document.getElementsByTagName('header')[0]
+const img = document.getElementById('rotate')
+
 header.onmousemove = function(event) {
   goalx = -15+event.clientX/100
   goaly = -10+event.clientY/100
@@ -33,8 +35,10 @@ header.onmousemove = function(event) {
 function update(){
   header.style.backgroundPositionX = progressx+'rem'
   header.style.backgroundPositionY = progressy+'rem'
+  img.style.transform = `rotate(${-progressx/2-3}deg)`
   progressx = lerp(progressx,goalx,.2)
   progressy = lerp(progressy,goaly,.2)
+  
   requestAnimationFrame(update)
 }
 
