@@ -1,7 +1,9 @@
 header{
   background-image: url("../images/banner-bg.jpg");
   border-radius: 0px 0px 150px 150px;
+  background-position: 0px top;
 }
+
 nav div a{
   transition-property: all;
   transition-timing-function: ease-in-out;
@@ -47,6 +49,15 @@ div p{
 
 
 #search-input, #email-input{
+  color:black;
+  border-radius: 25px; 
+  padding: 10px; 
+  padding-left: 35px;
+  font-size: large;
+  outline: none;
+}
+
+#email-input{
   color:black;
   border-radius: 25px; 
   padding: 10px; 

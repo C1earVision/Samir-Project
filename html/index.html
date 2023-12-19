@@ -12,7 +12,7 @@
     <header class="h-[950px]">
       <nav class="pt-10 pl-[7.5vw] flex justify-between flex-row" id="nav-bar">
         <div class="self-center">
-          <img src="../images/logo.png">
+          <img src="../images/logo.png" >
         </div>
         <div class="self-center mr-[6vw] text-white lg:flex gap-7 hidden">
           <a class="navlink-active">Home</a>
@@ -21,6 +21,28 @@
           <a href="./contact.html" class="navlink">Contact Us</a>
           <a class="navlink-sign">SIGN IN</a>
         </div>
+        <div class="lg:hidden mr-5 relative flex flex-row">
+          <i class="fa-solid fa-bars fa-2x self-center" style="color: #ffffff;" id="drop-dwn-button"></i>
+          <div id="dropdown" class="z-10 hidden absolute left-[-130px] top-[70px] bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our shop</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Product Details</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">SIGN IN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <div class="flex lg:flex-row flex-col mt-[30vh] relative lg:gap-0 gap-7">
         <div class = "first lg:max-w-[50vw] pl-[7.5vw] md:max-w-[70vw]" id="scroll">
@@ -28,13 +50,13 @@
           <h1>BEST GAMING SITE EVER!</h1>
           <img class="relative top-[-0.8em] sm:block hidden left-[7.3em]" src="../images/caption-dec.png">
           <p>This project was made by the great Ahmed Ebrahim and the mediocre Shehab Tarek For Dr.Samir Al-Saghir and we would like a bonus because our GPA is under the water.</p>
-          <div>
-            <input class="" type="text" placeholder="search" id="search-input"/>
+          <div class="">
+            <input class="sm:w-[70%] w-[50%]" type="text" placeholder="search" id="search-input"/>
             <button class="">search</button>
           </div>
         </div>
         <div class="lg:ml-[15vw] lg:mt-[-80px] mt-[100px] self-center">
-          <div class="relative">
+          <div class="relative" id="rotate">
             <img class="rounded-[2em] md:w-[410px] w-[350px]" src="../images/banner-image.jpg" alt="">
             <div class="price rounded-[50px] px-4 py-2">
               <p class="text-xl font-bold">$22</p>
@@ -72,7 +94,7 @@
         </div>
       </div>
   </header>
-  <div class="lg:mt-[230px] mt-[1000px]" >
+  <div class="lg:mt-[230px] mt-[1300px]" >
     <div class="ml-[7.5vw]">
       <p class="text-[rgb(238,98,107)] font-bold">TRENDING</p>
       <div class="flex flex-row justify-between w-[80vw] ">

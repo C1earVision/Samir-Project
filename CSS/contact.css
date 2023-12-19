@@ -1,5 +1,6 @@
 header{
   background-image: url("../images/banner-bg.jpg");
+  background-repeat: no-repeat;
   border-radius: 0px 0px 170px 170px;
   height: 450px;
 }
@@ -98,6 +99,7 @@ input{
 #message{
   width: 85%;
   height: 50%;
+  
   padding-bottom: 20%;
 }
 footer{
